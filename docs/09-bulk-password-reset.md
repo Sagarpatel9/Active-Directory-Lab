@@ -11,7 +11,7 @@
 On DC01, open PowerShell (Admin):
 ```powershell
 Get-ADUser -Filter {Department -eq "Finance"} -SearchBase "OU=CORP-Users,DC=corp,DC=local" | ForEach-Object {
-    Set-ADAccountPassword -Identity $_ -Reset -NewPassword (ConvertTo-SecureString "Emergency@2026!" -AsPlainText -Force)
+    Set-ADAccountPassword -Identity $_ -Reset -NewPassword (ConvertTo-SecureString "**********" -AsPlainText -Force)
     Set-ADUser -Identity $_ -ChangePasswordAtLogon $true
     Write-Host "Reset password for: $($_.Name)" -ForegroundColor Yellow
 }
