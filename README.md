@@ -30,31 +30,41 @@ Built to demonstrate hands-on IT administration skills including: Active Directo
 ## Architecture
 ```
 ┌──────────────────────────────────────────────────────────┐
-│                    Microsoft Azure                       │
-│                Resource Group: AD-Lab-RG                 │
-│                Region: Canada Central                    │
+│                    Microsoft Azure                        │
+│                Resource Group: AD-Lab-RG                  │
+│                Region: Canada Central                     │
 │                                                          │
 │   ┌──────────────────────────────────────────────────┐   │
 │   │         VNet: AD-Lab-VNet (10.0.0.0/16)          │   │
 │   │         Subnet: AD-Subnet (10.0.1.0/24)          │   │
 │   │         DNS Server: 10.0.1.4                     │   │
 │   │                                                  │   │
-│   │   ┌───────────────┐       ┌───────────────┐      │   │
-│   │   │     DC01      │       │   CLIENT01    │      │   │
-│   │   │  10.0.1.4     │◄─────►│  10.0.1.5     │      │   │
-│   │   │               │       │               │      │   │
-│   │   │  AD DS + DNS  │       │ Domain-Joined │      │   │
-│   │   │  corp.local   │       │ Workstation   │      │   │
-│   │   │  5 GPOs       │       │               │      │   │
-│   │   │  51 Users     │       │               │      │   │
-│   │   └───────────────┘       └───────────────┘      │   │
+│   │   ┌───────────────┐       ┌───────────────┐     │   │
+│   │   │     DC01      │       │   CLIENT01    │     │   │
+│   │   │  10.0.1.4     │◄─────►│  10.0.1.5     │     │   │
+│   │   │               │       │               │     │   │
+│   │   │  AD DS + DNS  │       │ Domain-Joined │     │   │
+│   │   │  corp.local   │       │ Workstation   │     │   │
+│   │   │  5 GPOs       │       │               │     │   │
+│   │   │  51 Users     │       │               │     │   │
+│   │   └───────────────┘       └───────────────┘     │   │
 │   └──────────────────────────────────────────────────┘   │
 │                                                          │
 │        RDP Access via Microsoft Remote Desktop           │
 └──────────────────────────────────────────────────────────┘
 ```
 
+### Virtual Network Overview
 <img src="screenshots/infrastructure/vnet-overview.png" width="800">
+
+### DC01 — Domain Controller
+<img src="screenshots/infrastructure/dc01-overview.png" width="800">
+
+### CLIENT01 — Domain-Joined Workstation
+<img src="screenshots/infrastructure/client01-overview.png" width="800">
+
+### DC01 Network Configuration
+<img src="screenshots/infrastructure/dc01-ipconfig.png" width="800">
 
 ---
 
