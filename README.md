@@ -117,6 +117,46 @@ corp.local
 
 ---
 
+---
+
+## Group Policies
+
+5 custom GPOs configured to enforce security baselines, restrict user access, and demonstrate GPO inheritance.
+
+| GPO | Linked To | Purpose |
+|-----|-----------|---------|
+| **Password & Lockout Policy** | Default Domain Policy | 10-char minimum, complexity required, 90-day max age, 5 password history, lockout after 5 failed attempts (30 min) |
+| **CORP-Desktop-Lockdown** | CORP-Users OU | Blocks Control Panel, Command Prompt, and Registry Editor for all regular users |
+| **CORP-IT-Exceptions** | IT OU | Overrides lockdown for IT staff — restores access to admin tools |
+| **CORP-Desktop-Wallpaper** | CORP-Users OU | Enforces company wallpaper and prevents users from changing desktop background |
+| **CORP-Disable-USB** | CORP-Users OU | Blocks all removable storage read/write access — data loss prevention |
+
+### GPO Inheritance
+
+The Desktop Lockdown GPO applies to all users under CORP-Users. The IT-Exceptions GPO is linked to the IT OU (child of CORP-Users) and explicitly **disables** the restrictions, overriding the parent policy. This demonstrates GPO precedence — policies closer to the object win.
+
+**Tested:** HR user blocked from Control Panel ✓ | IT user has full access ✓
+
+### Group Policy Management Tree
+<img src="screenshots/gpo/gpo-tree.png" width="800">
+
+### Password Policy
+<img src="screenshots/gpo/password-policy.png" width="800">
+
+### Account Lockout Policy
+<img src="screenshots/gpo/account-lockout.png" width="800">
+
+### USB Disable Policy (Data Loss Prevention)
+<img src="screenshots/gpo/usb-disable.png" width="800">
+
+### Desktop Wallpaper Policy
+<img src="screenshots/gpo/wallpaper-policy.png" width="800">
+
+### Prevent Changing Desktop Background
+<img src="screenshots/gpo/prevent-wallpaper-change.png" width="800">
+
+---
+
 ## Helpdesk Scenarios
 
 10 real-world Tier 1 helpdesk scenarios simulated and documented with step-by-step resolutions.
