@@ -133,3 +133,42 @@ corp.local
 | 8 | [Find Expiring Accounts](docs/08-expiring-accounts.md) | PowerShell | Report accounts expiring within 60 days |
 | 9 | [Bulk Password Reset](docs/09-bulk-password-reset.md) | PowerShell | Emergency security response — reset entire department |
 | 10 | [Trust Relationship Fix](docs/10-trust-relationship.md) | PowerShell | Workstation loses domain trust — diagnose and repair |
+
+---
+
+## Scripts
+
+| Script | Description |
+|--------|-------------|
+| [bulk-create-users.ps1](scripts/bulk-create-users.ps1) | Creates 50 users from CSV across 4 department OUs with error handling for duplicates |
+| [users.csv](scripts/users.csv) | User data — first name, last name, department, username |
+
+## Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| **Microsoft Azure** | Cloud infrastructure — VMs, VNet, NSGs |
+| **Windows Server 2025** | Domain Controller with AD DS and DNS |
+| **Active Directory Users and Computers** | User and OU management (GUI) |
+| **Group Policy Management** | GPO creation and troubleshooting |
+| **PowerShell** | Automation, bulk operations, diagnostics |
+| **Microsoft Remote Desktop** | RDP access from macOS |
+
+---
+
+## Key Takeaways
+
+- **GPO inheritance matters** — policies linked to parent OUs apply to all children unless explicitly overridden. Setting a policy to "Not Configured" doesn't override; it must be set to "Disabled."
+- **Azure networking** — VNet DNS must point to the DC's private IP before any client can join the domain. Azure assigns IPs via DHCP; static IPs must be set from the Azure portal, not inside the VM.
+- **Account lockout is the #1 helpdesk ticket** — understanding how lockout policies work and how to quickly find and unlock accounts is essential for any IT support role.
+- **PowerShell scales** — bulk-creating 50 users or resetting an entire department's passwords takes seconds compared to minutes of manual GUI work.
+- **Disable, don't delete** — terminated employee accounts should be disabled first and retained for 30-90 days for legal holds before permanent deletion.
+
+---
+
+## Author
+
+**Sagar Patel**
+- MS Computer Science (Cybersecurity) — University of Texas at Dallas (In Progress)
+- BS Computer Science (Cybersecurity) — California State University, Fullerton
+- [LinkedIn](https://linkedin.com/in/sagar-patel-48612a311) | [GitHub](https://github.com/Sagarpatel9)
