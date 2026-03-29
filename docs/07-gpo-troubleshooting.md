@@ -25,6 +25,7 @@ gpresult /r
 ```powershell
 gpresult /h C:\Users\mwilliams\Desktop\gpo-report.html
 ```
+![html Output](../screenshots/scenarios/07-gpo-troubleshooting/html-report.png)
 
 Open the HTML file on the desktop for a detailed visual breakdown of all applied policies.
 
