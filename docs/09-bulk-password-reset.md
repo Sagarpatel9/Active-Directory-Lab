@@ -23,7 +23,7 @@ All 16 Finance users reset in under 5 seconds.
 
 ## Verification
 
-Logged into CLIENT01 as `CORP\djones` with `Emergency@2026!` — login successful, confirming the bulk reset worked.
+Logged into CLIENT01 as `CORP\djones` with Temp Password — login successful, confirming the bulk reset worked.
 
 ![Login Success](../screenshots/scenarios/09-bulk-password-reset/login-success.png)
 
