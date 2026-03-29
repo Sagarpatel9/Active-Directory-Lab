@@ -19,7 +19,7 @@ The account icon now shows a **red down arrow** indicating the account is disabl
 
 ![Disabled Account](../screenshots/scenarios/04-disable-enable/red-arrow.png)
 
-![Disabled Account](../screenshots/scenarios/04-disable-enable/disabled-account)
+![Disabled Account](../screenshots/scenarios/04-disable-enable/disabled-account.png)
 
 ## Resolution — Re-Enable (GUI)
 
@@ -29,7 +29,7 @@ Two weeks later: *"David Jones has been rehired. Please re-enable his account."*
 2. Click **OK**
 3. Reset password since the user has been away
 
-![Enabled Account](../screenshots/scenarios/04-disable-enable/red-arrow-gone)
+![Enabled Account](../screenshots/scenarios/04-disable-enable/red-arrow-gone.png)
 
 ## Verification
 
