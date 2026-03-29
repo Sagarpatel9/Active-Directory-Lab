@@ -117,8 +117,6 @@ corp.local
 
 ---
 
----
-
 ## Group Policies
 
 5 custom GPOs configured to enforce security baselines, restrict user access, and demonstrate GPO inheritance.
