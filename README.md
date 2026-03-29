@@ -55,3 +55,35 @@ Built to demonstrate hands-on IT administration skills including: Active Directo
 ```
 
 <img src="screenshots/infrastructure/vnet-overview.png" width="800">
+
+---
+
+## Active Directory Structure
+```
+corp.local
+├── CORP-Users
+│   ├── IT (15 users)
+│   ├── HR (14 users)
+│   ├── Finance (16 users)
+│   └── Management (7 users)
+├── CORP-Computers
+│   └── CLIENT01
+├── Domain Controllers
+│   └── DC01
+├── Builtin
+├── Computers
+└── Users
+```
+
+51 users created across 4 department OUs — 2 manually via GUI, 48 via PowerShell bulk script, and 1 through the new hire onboarding scenario.
+
+| Department | Users | Example Accounts |
+|------------|-------|-----------------|
+| **IT** | 15 | jsmith, mwilliams, lgarcia, rmartinez |
+| **HR** | 14 | sjohnson, ebrown, mrodriguez, dtaylor |
+| **Finance** | 16 | djones, jmiller, wanderson, ajackson, arivera |
+| **Management** | 7 | jdavis, cwhite, nlee, lyoung |
+
+<img src="screenshots/infrastructure/ou-it.png" width="800">
+
+<img src="screenshots/infrastructure/ou-finance.png" width="800">
