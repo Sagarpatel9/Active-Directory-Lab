@@ -114,3 +114,22 @@ corp.local
 
 ### PowerShell Summary — 51 Users, 7 OUs, CLIENT01
 <img src="screenshots/infrastructure/powershell-summary.png" width="800">
+
+---
+
+## Helpdesk Scenarios
+
+10 real-world Tier 1 helpdesk scenarios simulated and documented with step-by-step resolutions.
+
+| # | Scenario | Method | Description |
+|---|----------|--------|-------------|
+| 1 | [Password Reset](docs/01-password-reset.md) | GUI | User forgot password — reset with temporary password |
+| 2 | [Account Lockout & Unlock](docs/02-account-lockout.md) | GUI | Account locked after 5 failed attempts — find and unlock |
+| 3 | [Create New User](docs/03-create-user.md) | GUI | New hire onboarding — create account in correct OU |
+| 4 | [Disable/Enable Account](docs/04-disable-enable.md) | GUI | Employee termination and rehire |
+| 5 | [Add User to Security Group](docs/05-security-group.md) | GUI | Grant resource access via group membership (RBAC) |
+| 6 | [Move User Between Departments](docs/06-move-user.md) | GUI | Employee transfer — move OU and update department |
+| 7 | [GPO Troubleshooting](docs/07-gpo-troubleshooting.md) | GUI + CLI | Diagnose policy issues with gpresult |
+| 8 | [Find Expiring Accounts](docs/08-expiring-accounts.md) | PowerShell | Report accounts expiring within 60 days |
+| 9 | [Bulk Password Reset](docs/09-bulk-password-reset.md) | PowerShell | Emergency security response — reset entire department |
+| 10 | [Trust Relationship Fix](docs/10-trust-relationship.md) | PowerShell | Workstation loses domain trust — diagnose and repair |
