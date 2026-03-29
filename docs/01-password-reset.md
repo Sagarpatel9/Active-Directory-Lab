@@ -17,6 +17,8 @@
 
 ![Password Reset Dialog](../screenshots/scenarios/01-password-reset/reset-dialog.png)
 
+![Password Reset Pop-up](../screenshots/scenarios/01-password-reset/popup-confirm.png)
+
 ## Verification
 
 Logged into CLIENT01 as `CORP\sjohnson` with the temporary password. User was prompted to change password on first login — confirming the reset was successful.
