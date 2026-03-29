@@ -94,6 +94,23 @@ corp.local
 | **Finance** | 16 | djones, jmiller, wanderson, ajackson, arivera |
 | **Management** | 7 | jdavis, cwhite, nlee, lyoung |
 
+### Domain Verification
+<img src="screenshots/infrastructure/get-addomain.png" width="800">
+
+### OU Tree with CLIENT01
+<img src="screenshots/infrastructure/ou-tree-computers.png" width="800">
+
+### IT Department (15 users)
 <img src="screenshots/infrastructure/ou-it.png" width="800">
 
+### HR Department (14 users)
+<img src="screenshots/infrastructure/ou-hr.png" width="800">
+
+### Finance Department (16 users)
 <img src="screenshots/infrastructure/ou-finance.png" width="800">
+
+### Management Department (7 users)
+<img src="screenshots/infrastructure/ou-management.png" width="800">
+
+### PowerShell Summary — 51 Users, 7 OUs, CLIENT01
+<img src="screenshots/infrastructure/powershell-summary.png" width="800">
